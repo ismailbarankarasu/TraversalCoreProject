@@ -1,0 +1,16 @@
+C:\cSharpDersleri\TraversalCoreProject\EntityLayer\bin\Debug\net5.0\EntityLayer.deps.json
+C:\cSharpDersleri\TraversalCoreProject\EntityLayer\bin\Debug\net5.0\EntityLayer.runtimeconfig.json
+C:\cSharpDersleri\TraversalCoreProject\EntityLayer\bin\Debug\net5.0\EntityLayer.runtimeconfig.dev.json
+C:\cSharpDersleri\TraversalCoreProject\EntityLayer\bin\Debug\net5.0\EntityLayer.dll
+C:\cSharpDersleri\TraversalCoreProject\EntityLayer\bin\Debug\net5.0\EntityLayer.pdb
+C:\cSharpDersleri\TraversalCoreProject\EntityLayer\obj\Debug\net5.0\EntityLayer.csproj.AssemblyReference.cache
+C:\cSharpDersleri\TraversalCoreProject\EntityLayer\obj\Debug\net5.0\EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\cSharpDersleri\TraversalCoreProject\EntityLayer\obj\Debug\net5.0\EntityLayer.AssemblyInfoInputs.cache
+C:\cSharpDersleri\TraversalCoreProject\EntityLayer\obj\Debug\net5.0\EntityLayer.AssemblyInfo.cs
+C:\cSharpDersleri\TraversalCoreProject\EntityLayer\obj\Debug\net5.0\EntityLayer.csproj.CoreCompileInputs.cache
+C:\cSharpDersleri\TraversalCoreProject\EntityLayer\obj\Debug\net5.0\EntityLayer.sourcelink.json
+C:\cSharpDersleri\TraversalCoreProject\EntityLayer\obj\Debug\net5.0\EntityLayer.dll
+C:\cSharpDersleri\TraversalCoreProject\EntityLayer\obj\Debug\net5.0\refint\EntityLayer.dll
+C:\cSharpDersleri\TraversalCoreProject\EntityLayer\obj\Debug\net5.0\EntityLayer.pdb
+C:\cSharpDersleri\TraversalCoreProject\EntityLayer\obj\Debug\net5.0\EntityLayer.genruntimeconfig.cache
+C:\cSharpDersleri\TraversalCoreProject\EntityLayer\obj\Debug\net5.0\ref\EntityLayer.dll
