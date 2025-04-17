@@ -9,5 +9,7 @@ namespace DataAccessLayer.Abstract
 {
     public interface IDestinationDal:IGenericDal<Destination>
     {
+        int DestinationCount();
+        int GuidesCount();
     }
 }
