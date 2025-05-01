@@ -33,6 +33,12 @@ namespace TraversalCoreProject
 
             services.AddScoped<IFeatureDal, EfFeatureDal>();
             services.AddScoped<IFeatureService, FeatureManager>();
+
+            services.AddScoped<ISubAboutDal, EfSubAboutDal>();
+            services.AddScoped<ISubAboutService, SubAboutManager>();
+
+            services.AddScoped<ITestimonialDal, EfTestimonialDal>();
+            services.AddScoped<ITestimonialService, TestimonialManager>();
             services.AddDbContext<Context>();
             services.AddControllersWithViews();
         }
