@@ -24,10 +24,16 @@ using TraversalCoreProject.Models
 
 #nullable disable
     ;
+#nullable restore
+#line 3 "C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\Views\_ViewImports.cshtml"
+using EntityLayer.Concrete
+
+#nullable disable
+    ;
     #line default
     #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"bf3e932ff60e19067cd8f94cd19faaf55d0d530066edcf45d6729810afcded5d", @"/Views/Shared/_UILayout.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"e2043901dbd1e3c1af3d4f5aa5e73b2c6ae976fc24bf693cf5651c8220871e73", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"e77bafe3a4377eea3e7f6d84ea81aafed67ebd71d67c29056991fcdc84caa02a", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     internal sealed class Views_Shared__UILayout : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     #nullable disable
@@ -77,7 +83,7 @@ using TraversalCoreProject.Models
 #nullable disable
             );
             WriteLiteral("\r\n\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bf3e932ff60e19067cd8f94cd19faaf55d0d530066edcf45d6729810afcded5d3934", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bf3e932ff60e19067cd8f94cd19faaf55d0d530066edcf45d6729810afcded5d4106", async() => {
                 WriteLiteral("\r\n    ");
                 Write(
 #nullable restore

@@ -24,10 +24,16 @@ using TraversalCoreProject.Models
 
 #nullable disable
     ;
+#nullable restore
+#line 3 "C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\Views\_ViewImports.cshtml"
+using EntityLayer.Concrete
+
+#nullable disable
+    ;
     #line default
     #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"d096a1bd8f90c5dade73c3bab6470d7c222da90409e49c155389f793609e28b8", @"/Views/Shared/Components/_UILayoutGridWithBigImageComponentPartial/Default.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"e2043901dbd1e3c1af3d4f5aa5e73b2c6ae976fc24bf693cf5651c8220871e73", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"e77bafe3a4377eea3e7f6d84ea81aafed67ebd71d67c29056991fcdc84caa02a", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     internal sealed class Views_Shared_Components__UILayoutGridWithBigImageComponentPartial_Default : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     #nullable disable
@@ -71,7 +77,7 @@ using TraversalCoreProject.Models
                 <div class=""maghny-grid"">
                     <figure class=""effect-lily border-radius  m-0"">
                         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "d096a1bd8f90c5dade73c3bab6470d7c222da90409e49c155389f793609e28b86531", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "d096a1bd8f90c5dade73c3bab6470d7c222da90409e49c155389f793609e28b86703", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -103,7 +109,7 @@ using TraversalCoreProject.Models
                         <div class=""maghny-grid"">
                             <figure class=""effect-lily border-radius"">
                                 ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "d096a1bd8f90c5dade73c3bab6470d7c222da90409e49c155389f793609e28b88399", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "d096a1bd8f90c5dade73c3bab6470d7c222da90409e49c155389f793609e28b88571", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -133,7 +139,7 @@ using TraversalCoreProject.Models
                         <div class=""maghny-grid"">
                             <figure class=""effect-lily border-radius"">
                                 ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "d096a1bd8f90c5dade73c3bab6470d7c222da90409e49c155389f793609e28b810239", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "d096a1bd8f90c5dade73c3bab6470d7c222da90409e49c155389f793609e28b810411", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -163,7 +169,7 @@ using TraversalCoreProject.Models
                         <div class=""maghny-grid"">
                             <figure class=""effect-lily border-radius"">
                                 ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "d096a1bd8f90c5dade73c3bab6470d7c222da90409e49c155389f793609e28b812085", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "d096a1bd8f90c5dade73c3bab6470d7c222da90409e49c155389f793609e28b812257", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -193,7 +199,7 @@ using TraversalCoreProject.Models
                         <div class=""maghny-grid"">
                             <figure class=""effect-lily border-radius"">
                                 ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "d096a1bd8f90c5dade73c3bab6470d7c222da90409e49c155389f793609e28b813931", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "d096a1bd8f90c5dade73c3bab6470d7c222da90409e49c155389f793609e28b814103", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

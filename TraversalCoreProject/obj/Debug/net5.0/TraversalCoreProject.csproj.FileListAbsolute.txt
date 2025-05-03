@@ -171,3 +171,5 @@ C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\obj\Debug\net5.0\Raz
 C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\obj\Debug\net5.0\Razor\Views\Shared\Components\_UILayoutTestimonialsComponentPartial\Default.cshtml.g.cs
 C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\obj\Debug\net5.0\Razor\Views\Shared\Components\_UILayoutGridWithBigImageComponentPartial\Default.cshtml.g.cs
 C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\obj\Debug\net5.0\Razor\Views\Shared\Components\_UILayoutW3lComponentPartial\Default.cshtml.g.cs
+C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\obj\Debug\net5.0\Razor\Views\Destination\Index.cshtml.g.cs
+C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\obj\Debug\net5.0\Razor\Views\Destination\DestinationDetails.cshtml.g.cs

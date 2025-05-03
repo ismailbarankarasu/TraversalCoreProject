@@ -24,10 +24,16 @@ using TraversalCoreProject.Models
 
 #nullable disable
     ;
+#nullable restore
+#line 3 "C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\Views\_ViewImports.cshtml"
+using EntityLayer.Concrete
+
+#nullable disable
+    ;
     #line default
     #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"73abc341d53af8700b707ec93f55425642ee0866470aa5d15ab37df27209695c", @"/Views/Shared/Components/_UILayoutFooterComponentPartial/Default.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"e2043901dbd1e3c1af3d4f5aa5e73b2c6ae976fc24bf693cf5651c8220871e73", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"e77bafe3a4377eea3e7f6d84ea81aafed67ebd71d67c29056991fcdc84caa02a", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     internal sealed class Views_Shared_Components__UILayoutFooterComponentPartial_Default : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     #nullable disable
@@ -108,7 +114,7 @@ using TraversalCoreProject.Models
                         <div class=""end-column"">
                             <h4>Son gelişmeler ve kampanyalardan haberdar olun.</h4>
                             ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "73abc341d53af8700b707ec93f55425642ee0866470aa5d15ab37df27209695c7467", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "73abc341d53af8700b707ec93f55425642ee0866470aa5d15ab37df27209695c7639", async() => {
                 WriteLiteral("\r\n                                <input type=\"email\" name=\"email\" placeholder=\"Email Adresiniz\"");
                 BeginWriteAttribute("required", " required=\"", 2810, "\"", 2821, 0);
                 EndWriteAttribute();

@@ -33,7 +33,7 @@ using TraversalCoreProject.Models
     #line default
     #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"0a20f0089f8af19cf0e9631d04bfe26d5dca084d365fc83b810491f314960207", @"/Views/Shared/Components/_UILayoutW3lComponentPartial/Default.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"e2043901dbd1e3c1af3d4f5aa5e73b2c6ae976fc24bf693cf5651c8220871e73", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"e77bafe3a4377eea3e7f6d84ea81aafed67ebd71d67c29056991fcdc84caa02a", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     internal sealed class Views_Shared_Components__UILayoutW3lComponentPartial_Default : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<
 #nullable restore
