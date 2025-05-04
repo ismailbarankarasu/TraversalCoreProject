@@ -4,6 +4,7 @@ using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -35,12 +36,17 @@ namespace BusinessLayer.Concrete
 
         public Destination TGetById(int id)
         {
-            throw new NotImplementedException();
+            return _destinationDal.GetById(id);
         }
 
         public List<Destination> TGetList()
         {
             return _destinationDal.GetList();
+        }
+
+        public List<Destination> TGetListByFilter(Expression<Func<Destination, bool>> filter)
+        {
+            throw new NotImplementedException();
         }
 
         public int TGuidesCount()
