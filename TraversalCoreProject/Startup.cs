@@ -39,6 +39,9 @@ namespace TraversalCoreProject
 
             services.AddScoped<ITestimonialDal, EfTestimonialDal>();
             services.AddScoped<ITestimonialService, TestimonialManager>();
+
+            services.AddScoped<ICommentDal, EfCommentDal>();
+            services.AddScoped<ICommentService, CommentManager>();
             services.AddDbContext<Context>();
             services.AddControllersWithViews();
         }
