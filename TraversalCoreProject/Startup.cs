@@ -17,6 +17,7 @@ using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using TraversalCoreProject.Models;
 
 namespace TraversalCoreProject
 {
@@ -48,7 +49,9 @@ namespace TraversalCoreProject
             services.AddScoped<ICommentService, CommentManager>();
             services.AddDbContext<Context>();
             services.AddIdentity<AppUser, AppRole>()
-                .AddEntityFrameworkStores<Context>();
+                .AddEntityFrameworkStores<Context>()
+                .AddErrorDescriber<CustomIdentityValidator>();
+
             services.AddMvc(cf =>
             {
                 var policy = new AuthorizationPolicyBuilder()
