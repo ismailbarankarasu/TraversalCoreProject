@@ -47,6 +47,10 @@ namespace TraversalCoreProject
 
             services.AddScoped<ICommentDal, EfCommentDal>();
             services.AddScoped<ICommentService, CommentManager>();
+
+            services.AddScoped<IReservationDal, EfReservationDal>();
+            services.AddScoped<IReservationService, ReservationManager>();
+
             services.AddDbContext<Context>();
             services.AddIdentity<AppUser, AppRole>()
                 .AddEntityFrameworkStores<Context>()
