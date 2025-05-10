@@ -209,3 +209,6 @@ C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\obj\Debug\net5.0\Raz
 C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\obj\Debug\net5.0\Razor\Areas\Member\Views\Destination\Index.cshtml.g.cs
 C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\obj\Debug\net5.0\Razor\Areas\Member\Views\Profile\Index.cshtml.g.cs
 C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\obj\Debug\net5.0\Razor\Areas\Member\Views\_ViewImports.cshtml.g.cs
+C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\obj\Debug\net5.0\Razor\Areas\Member\Views\Reservation\NewReservation.cshtml.g.cs
+C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\obj\Debug\net5.0\Razor\Areas\Member\Views\Reservation\MyCurrentReservation.cshtml.g.cs
+C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\obj\Debug\net5.0\Razor\Areas\Member\Views\Reservation\MyOldReservation.cshtml.g.cs
