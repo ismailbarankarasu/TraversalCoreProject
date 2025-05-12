@@ -1,15 +1,14 @@
 ﻿@model List<Reservation>
 @{
-    ViewData["Title"] = "MyCurrentReservation";
+    ViewData["Title"] = "MyApprovalReservation";
     Layout = "~/Views/Shared/_UserLayout.cshtml";
 }
-
 <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
-<h1>Aktif Rezervasyonlar</h1>
+<h1>Onay Bekleyen Rezervasyonlar</h1>
 <table class="table table-bordered table-hover">
     <tr>
         <th>#</th>
-        <th>Lokasyon</th>
+        <th>Lokasyon</th> 
         <th>Kişi Sayısı</th>
         <th>Rezervasyon Tarihi</th>
         <th>Durum</th>
@@ -25,5 +24,3 @@
         </tr>
     }
 </table>
-
-
