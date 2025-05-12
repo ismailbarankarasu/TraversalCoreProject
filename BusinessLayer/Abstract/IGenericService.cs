@@ -14,6 +14,6 @@ namespace BusinessLayer.Abstract
         void TDelete(T t);
         List<T> TGetList();
         T TGetById(int id);
-        
+       // List<T> TGetListByFilter(Expression<Func<T, bool>> filter);
     }
 }
