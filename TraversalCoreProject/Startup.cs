@@ -51,6 +51,9 @@ namespace TraversalCoreProject
             services.AddScoped<IReservationDal, EfReservationDal>();
             services.AddScoped<IReservationService, ReservationManager>();
 
+            services.AddScoped<IGuideDal, EfGuideDal>();
+            services.AddScoped<IGuideService, GuideManager>();
+
             services.AddDbContext<Context>();
             services.AddIdentity<AppUser, AppRole>()
                 .AddEntityFrameworkStores<Context>()
@@ -100,6 +103,7 @@ namespace TraversalCoreProject
                   pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
                 );
             });
+
         }
     }
 }
