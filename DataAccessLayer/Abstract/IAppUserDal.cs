@@ -7,10 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Abstract
 {
-    public interface IDestinationDal:IGenericDal<Destination>
+    public interface IAppUserDal:IGenericDal<AppUser>
     {
-        int DestinationCount();
-        int GuidesCount();
-        int UsersCount();
     }
 }

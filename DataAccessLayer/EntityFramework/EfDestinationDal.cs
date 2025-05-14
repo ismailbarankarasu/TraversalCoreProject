@@ -30,5 +30,11 @@ namespace DataAccessLayer.EntityFramework
             var guidesCount = _context.Guides.Count();
             return guidesCount;
         }
+
+        public int UsersCount()
+        {
+            var usersCount = _context.Users.Count();
+            return usersCount;
+        }
     }
 }
