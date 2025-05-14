@@ -58,5 +58,10 @@ namespace BusinessLayer.Concrete
         {
             _destinationDal.Update(t);
         }
+
+        public int TUsersCount()
+        {
+            return _destinationDal.UsersCount();
+        }
     }
 }

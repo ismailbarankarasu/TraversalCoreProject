@@ -11,6 +11,6 @@ namespace BusinessLayer.Abstract
     {
         int TDestinationCount();
         int TGuidesCount();
-        
+        int TUsersCount();
     }
 }
