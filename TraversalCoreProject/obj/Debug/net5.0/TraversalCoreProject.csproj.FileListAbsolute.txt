@@ -233,3 +233,8 @@ C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\obj\Debug\net5.0\Raz
 C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\obj\Debug\net5.0\Razor\Views\Shared\Components\_AdminDashboardCards1StatisticsComponentPartial\Default.cshtml.g.cs
 C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\obj\Debug\net5.0\Razor\Views\Shared\Components\_AdminDashboardTotalRevenueComponentPartial\Default.cshtml.g.cs
 C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\obj\Debug\net5.0\Razor\Views\Shared\Components\_AdminDashboardCards2StatisticsComponentPartial\Default.cshtml.g.cs
+C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\obj\Debug\net5.0\Razor\Views\Shared\Components\_AdminDashboardDestinationStatisticComponentPartial\Default.cshtml.g.cs
+C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\obj\Debug\net5.0\Razor\Views\Shared\Components\_AdminDashboardDestinationStatistic2ComponentPartial\Default.cshtml.g.cs
+C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\obj\Debug\net5.0\Razor\Views\Shared\Components\_AdminDashboardGuideListComponentPartial\Default.cshtml.g.cs
+C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\obj\Debug\net5.0\Razor\Areas\Admin\Views\Comment\Index.cshtml.g.cs
+C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\obj\Debug\net5.0\Razor\Areas\Admin\Views\User\Index.cshtml.g.cs
