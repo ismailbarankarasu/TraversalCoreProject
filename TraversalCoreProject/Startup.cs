@@ -54,6 +54,9 @@ namespace TraversalCoreProject
             services.AddScoped<IGuideDal, EfGuideDal>();
             services.AddScoped<IGuideService, GuideManager>();
 
+            services.AddScoped<IAppUserDal, EfAppUserDal>();
+            services.AddScoped<IAppUserService, AppUserManager>();
+
             services.AddDbContext<Context>();
             services.AddIdentity<AppUser, AppRole>()
                 .AddEntityFrameworkStores<Context>()
@@ -93,16 +96,15 @@ namespace TraversalCoreProject
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
+                    name: "areas",
+                    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+
+                // Sonra normal route
+                endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllerRoute(
-                  name: "areas",
-                  pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
-                );
-            });
+
 
         }
     }
