@@ -1,0 +1,30 @@
+﻿@model List<Reservation>
+@{
+    ViewData["Title"] = "ReservationUser";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    int counter = 0;
+}
+
+<h1>Kullanıcının Geçmiş Rezervasyonları</h1>
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>#</th>
+        <th>Misafir Ad Soyad</th>
+        <th>Rota</th>
+        <th>Kişi Sayısı</th>
+        <th>Tarih</th>
+        <th>Detaylar</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@(++counter)</td>
+            <td>@(item.AppUser != null ? item.AppUser.Name + " " + item.AppUser.Surname : "Bilinmiyor")</td>
+            <td>@(item.Destination != null ? item.Destination.City : "Bilinmiyor")</td>
+            <td>@item.PersonCount</td>
+            <td>@item.ReservationDate.ToShortDateString()</td>
+            <td><a href="#" class="btn btn-outline-primary">Detaylar</a></td>
+        </tr>
+    }
+
+</table>
