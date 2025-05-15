@@ -238,3 +238,4 @@ C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\obj\Debug\net5.0\Raz
 C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\obj\Debug\net5.0\Razor\Views\Shared\Components\_AdminDashboardGuideListComponentPartial\Default.cshtml.g.cs
 C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\obj\Debug\net5.0\Razor\Areas\Admin\Views\Comment\Index.cshtml.g.cs
 C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\obj\Debug\net5.0\Razor\Areas\Admin\Views\User\Index.cshtml.g.cs
+C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\obj\Debug\net5.0\Razor\Areas\Admin\Views\User\ReservationUser.cshtml.g.cs
