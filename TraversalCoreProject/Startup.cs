@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using BusinessLayer.Abstract;
@@ -18,6 +19,7 @@ using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 using TraversalCoreProject.Models;
 
 namespace TraversalCoreProject
@@ -33,7 +35,13 @@ namespace TraversalCoreProject
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
-        {
+        {  
+            services.AddLogging(x =>
+            {
+                x.ClearProviders();
+                x.SetMinimumLevel(LogLevel.Debug);
+                x.AddDebug();
+            });
             services.ContainerDependencies();
             services.AddDbContext<Context>();
             services.AddIdentity<AppUser, AppRole>()
@@ -52,9 +60,11 @@ namespace TraversalCoreProject
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
         {
-            if (env.IsDevelopment())
+            var path = Directory.GetCurrentDirectory();
+            loggerFactory.AddFile($"{path}/Logs/traversallog.txt");
+            if (env.IsDevelopment())    
             {
                 app.UseDeveloperExceptionPage();
             }
