@@ -1,0 +1,8 @@
+2025-05-17T21:48:46.3301807+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-05-17T21:48:46.3499740+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2025-05-17T21:48:46.3527517+03:00  [INF] Content root path: "C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject" (b5d60022)
+2025-05-17T21:48:46.9553320+03:00 40000099-0005-fd00-b63f-84710c7967bb [INF] Index sayfası çağırıldı. (7ac446cf)
+2025-05-17T21:48:46.9632288+03:00 40000099-0005-fd00-b63f-84710c7967bb [ERR] Error log çağırıldı. (7c9b9bad)
+2025-05-17T21:49:05.2651322+03:00 4000020f-0007-f600-b63f-84710c7967bb [INF] Index sayfası çağırıldı. (7ac446cf)
+2025-05-17T21:49:05.2684837+03:00 4000020f-0007-f600-b63f-84710c7967bb [ERR] Error log çağırıldı. (7c9b9bad)
+2025-05-17T21:49:15.9293980+03:00 4000009b-0005-fd00-b63f-84710c7967bb [INF] 17.05.2025 00:00:00Privacy sayfası çağırıldı. (9c6cc7b2)
