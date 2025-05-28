@@ -276,3 +276,4 @@ C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\bin\Debug\net5.0\Bou
 C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\bin\Debug\net5.0\MailKit.dll
 C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\bin\Debug\net5.0\MimeKit.dll
 C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\obj\Debug\net5.0\Razor\Areas\Admin\Views\Mail\Index.cshtml.g.cs
+C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\obj\Debug\net5.0\Razor\Areas\Admin\Views\City\Index.cshtml.g.cs
