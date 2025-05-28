@@ -1,0 +1,62 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<h2 class="mb-3">Şehir Ülke İşlemleri</h2>
+<button class="btn btn-outline-info" type="button" id="btnGetList">
+    <i class="fa fa-list"></i> Şehir Listesi
+</button>
+
+<button class="btn btn-outline-primary" type="button" id="btnGetById">
+    <i class="fa fa-search"></i> Şehir Getir
+</button>
+
+<button class="btn btn-outline-warning" type="button" id="btnAddCity">
+    <i class="fa fa-plus-circle"></i> Şehir Ekle
+</button>
+
+<button class="btn btn-outline-danger" type="button" id="btnDeleteCity">
+    <i class="fa fa-trash"></i> Şehir Sil
+</button>
+
+<button class="btn btn-outline-success" type="button" id="btnUpdateCity">
+    <i class="fa fa-pencil"></i> Şehir Güncelle
+</button>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous"></script>
+<div id="cityList">
+    Buraya Şehir Listesi Gelicek
+</div>
+
+<script>
+    $("#btnGetList").click(function () {
+        $.ajax({
+            type: "GET",
+            url: "/Admin/City/CityList/",
+            success: function (data) {
+                console.log(data);
+                let tableHtml = "<table class='table table-bordered'> <tr> <th>Şehir Adı</th> <th>Gün-Gece</th> <th>Fiyatı</th></tr>";
+                $.each(data, function (index, value) {
+                    tableHtml += "<tr>";
+                    tableHtml += "<td>" + value.City + "</td>";
+                    tableHtml += "<td>" + value.DayNight + "</td>";
+                    tableHtml += "<td>" + value.Price + "</td>";
+                    tableHtml += "</tr>";
+                });
+                tableHtml += "</table>";
+                $("#cityList").html(tableHtml);
+            },
+            error: function (xhr, status, error) {
+                console.error("Hata:", error);
+            }
+        });
+    });
+</script>
+
