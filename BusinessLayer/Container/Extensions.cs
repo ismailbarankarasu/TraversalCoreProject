@@ -38,6 +38,10 @@ namespace BusinessLayer.Container
 
             services.AddScoped<IAppUserDal, EfAppUserDal>();
             services.AddScoped<IAppUserService, AppUserManager>();
+
+            services.AddScoped<IExcelService, ExcelManager>();
+            
+            services.AddScoped<IPdfService, PdfManager>();
         }
     }
 }
