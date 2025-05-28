@@ -1,5 +1,7 @@
-﻿using ClosedXML.Excel;
+﻿using BusinessLayer.Abstract;
+using ClosedXML.Excel;
 using DataAccessLayer.Concrete;
+using iTextSharp.text.rtf.parser.destinations;
 using Microsoft.AspNetCore.Mvc;
 using OfficeOpenXml;
 using System.Collections.Generic;
@@ -13,10 +15,12 @@ namespace TraversalCoreProject.Controllers
     public class ExcelController : Controller
     {
         private readonly Context context;
+        private readonly IExcelService _excelService;
 
-        public ExcelController(Context context)
+        public ExcelController(Context context, IExcelService excelService)
         {
             this.context = context;
+            _excelService = excelService;
         }
 
         public IActionResult Index()
@@ -37,25 +41,12 @@ namespace TraversalCoreProject.Controllers
         }
         public IActionResult StaticExcelReport()
         {
-            ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
-            using (var excel = new ExcelPackage())
-            {
-                var workSheet = excel.Workbook.Worksheets.Add("Sayfa1");
-                workSheet.Cells[1, 1].Value = "Rota";
-                workSheet.Cells[1, 2].Value = "Rehber";
-                workSheet.Cells[1, 3].Value = "Kontenjan";
+            return File(
+             _excelService.ExcelList(DestinationList()),
+                 "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                    "YeniExcel.xlsx"
+             );
 
-                workSheet.Cells[2, 1].Value = "Avrupa Turu";
-                workSheet.Cells[2, 2].Value = "Ahmet Yılmaz";
-                workSheet.Cells[2, 3].Value = "50";
-
-                workSheet.Cells[3, 1].Value = "Uzak Doğu Turu";
-                workSheet.Cells[3, 2].Value = "Mehmet Kaya";
-                workSheet.Cells[3, 3].Value = "35";
-
-                var bytes = excel.GetAsByteArray();
-                return File(bytes, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "dosya1.xlsx");
-            }
         }
         public IActionResult DestinationExcelReport()
         {
