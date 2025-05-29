@@ -1,5 +1,7 @@
 ﻿using BusinessLayer.Abstract;
 using DocumentFormat.OpenXml.Office2010.ExcelAc;
+using DocumentFormat.OpenXml.Presentation;
+using EntityLayer.Concrete;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System.Collections.Generic;
@@ -26,14 +28,33 @@ namespace TraversalCoreProject.Areas.Admin.Controllers
         {
             return Json(_destinationService.TGetList());
         }
-        public static List<CityClass> cities = new List<CityClass>
+
+        [HttpPost]
+        public IActionResult AddCityDestination(Destination destination)
         {
-            new CityClass{CityId=1, CityName="Istanbul", Country="Türkiye"},
-            new CityClass{CityId=2, CityName="Ankara", Country="Türkiye"},
-            new CityClass{CityId=3, CityName="Izmir", Country="Türkiye"},
-            new CityClass{CityId=4, CityName="Berlin", Country="Almanya"},
-            new CityClass{CityId=5, CityName="Paris", Country="Fransa"},
-            new CityClass{CityId=6, CityName="London", Country="İngiltere"}
-        };
+            destination.Status = true;
+            _destinationService.TAdd(destination);
+            var values = JsonConvert.SerializeObject(destination);
+            return Json(values);
+        }
+        public IActionResult GetById(int DestinationID)
+        {
+            var values = _destinationService.TGetById(DestinationID);
+            var jsonValues = JsonConvert.SerializeObject(values);
+            return Json(jsonValues);
+        }
+        public IActionResult DeleteCity(int DestinationID)
+        {
+            var value = _destinationService.TGetById(DestinationID);
+            _destinationService.TDelete(value);
+            return NoContent();
+        }
+        public IActionResult UpdateCity(Destination destination)
+        {
+            var values = _destinationService.TGetById(destination.DesctinationId);
+            _destinationService.TUpdate(values);
+            var value = JsonConvert.SerializeObject(destination);
+            return Json(value);
+        }
     }
 }

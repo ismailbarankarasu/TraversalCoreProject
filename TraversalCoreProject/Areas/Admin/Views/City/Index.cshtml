@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
@@ -31,10 +30,25 @@
 <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
         crossorigin="anonymous"></script>
-<div id="cityList">
+<div id="cityList" class="mb-4">
     Buraya Şehir Listesi Gelicek
 </div>
+<div id="destinationListById" class="mb-4">
+    
+</div>
+<div class="mb-3">
+    <input type="text" id="txtId" placeholder="Şehir ID Giriniz" class="form-control mb-3" />
+</div>
+<div class="mb-3">
+    <input type="text" id="txtCityId" placeholder="Silinecek ID Giriniz" class="form-control mb-3" />
+</div>
 
+<div>
+    <input type="text" id="txtCity" placeholder="Şehir Adını Giriniz" class="form-control mb-3"/>
+    <input type="text" id="txtDayNight" placeholder="Gün Gece Sayısı" class="form-control mb-3"/>
+    <input type="number" id="txtPrice" placeholder="Fiyat" class="form-control mb-3" />
+    <input type="number" id="txtCapacity" placeholder="Konaklayacak Kişi Sayısı" class="form-control mb-3" />
+</div>
 <script>
     $("#btnGetList").click(function () {
         $.ajax({
@@ -45,13 +59,71 @@
                 let tableHtml = "<table class='table table-bordered'> <tr> <th>Şehir Adı</th> <th>Gün-Gece</th> <th>Fiyatı</th></tr>";
                 $.each(data, function (index, value) {
                     tableHtml += "<tr>";
-                    tableHtml += "<td>" + value.City + "</td>";
-                    tableHtml += "<td>" + value.DayNight + "</td>";
-                    tableHtml += "<td>" + value.Price + "</td>";
+                    tableHtml += "<td>" + value.city + "</td>";
+                    tableHtml += "<td>" + value.dayNight + "</td>";
+                    tableHtml += "<td>" + value.price + "</td>";
                     tableHtml += "</tr>";
                 });
                 tableHtml += "</table>";
                 $("#cityList").html(tableHtml);
+            },
+            error: function (xhr, status, error) {
+                console.error("Hata:", error);
+            }
+        });
+    });
+
+    $("#btnAddCity").click(function(){
+        let cityValues ={
+            City: $("#txtCity").val(),
+            DayNight: $("#txtDayNight").val(),
+            Price: $("#txtPrice").val(),
+            Capacity: $("#txtCapacity").val()
+        };
+        $.ajax({
+            type:"post",
+            url:"/Admin/City/AddCityDestination/",
+            data:cityValues,
+            success:function(func){
+                let result = jquery.parseJSON(func);
+                alert("Şehir - Rota Başarılı Bir Şekilde Eklendi");
+            }
+        });
+    });
+
+    $("#btnGetById").click(function () {
+        let id = $("#txtId").val();
+
+        $.ajax({
+            type: "GET",
+            url: "/Admin/City/GetById",
+            data: { DestinationID: id },
+            success: function (data) {
+                let result = JSON.parse(data);
+                console.log(result);
+                let htmlStr = `
+                    <table class='table table-bordered table-hover'>
+                        <tr><th>Şehir Adı</th><th>Gün - Gece</th><th>Fiyatı</th></tr>
+                        <tr><td>${result.City}</td><td>${result.DayNight}</td><td>${result.Price}</td></tr>
+                    </table>`;
+                $("#destinationListById").html(htmlStr);
+            },
+            error: function (xhr) {
+                console.error("Hata:", xhr.responseText);
+            }
+        });
+    });
+
+    $("#btnDeleteCity").click(function () {
+        let id = $("#txtCityId").val();
+        $.ajax({
+            type: "post",
+            url: "/Admin/City/DeleteCity/",
+            contentType: "application/json",
+            data: { DestinationID: id },
+            success: function (data) {
+                loadData();
+                alert("Şehir - Rota Başarılı Bir Şekilde Silindi");
             },
             error: function (xhr, status, error) {
                 console.error("Hata:", error);
