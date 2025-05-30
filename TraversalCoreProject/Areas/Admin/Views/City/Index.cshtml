@@ -114,15 +114,14 @@
         });
     });
 
-    $("#btnDeleteCity").click(function () {
+    $("#btnDeleteCity").click(x => {
         let id = $("#txtCityId").val();
         $.ajax({
             type: "post",
-            url: "/Admin/City/DeleteCity/",
+            url: "/Admin/City/DeleteCity/" + id,
             contentType: "application/json",
             data: { DestinationID: id },
             success: function (data) {
-                loadData();
                 alert("Şehir - Rota Başarılı Bir Şekilde Silindi");
             },
             error: function (xhr, status, error) {
