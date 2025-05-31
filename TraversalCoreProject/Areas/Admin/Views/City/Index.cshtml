@@ -42,6 +42,11 @@
 <div class="mb-3">
     <input type="text" id="txtCityId" placeholder="Silinecek ID Giriniz" class="form-control mb-3" />
 </div>
+<div class="mb-3">
+    <input type="text" id="txtCityEditId" placeholder="Güncellenecek ID Değerini Giriniz" class="form-control mb-3" />
+    <input type="text" id="txtCityName" placeholder="Güncellenecek Şehir Değerini Giriniz" class="form-control mb-3" />
+    <input type="text" id="txtDayNightName" placeholder="Güncellenecek Gün Gece Bilgisini Giriniz" class="form-control mb-3" />
+</div>
 
 <div>
     <input type="text" id="txtCity" placeholder="Şehir Adını Giriniz" class="form-control mb-3"/>
@@ -120,12 +125,28 @@
             type: "post",
             url: "/Admin/City/DeleteCity/" + id,
             contentType: "application/json",
-            data: { DestinationID: id },
+            dataType:"json",
             success: function (data) {
                 alert("Şehir - Rota Başarılı Bir Şekilde Silindi");
             },
             error: function (xhr, status, error) {
                 console.error("Hata:", error);
+            }
+        });
+    });
+
+    $("#btnUpdateCity").click(function(){
+        let values = {
+            DestinationID: $("#txtCityEditId").val(),
+            City: $("#txtCityName").val(),
+            DayNight: $("#txtDayNightName").val()
+        };
+        $.ajax({
+            type:"post",
+            url:"/Admin/City/UpdateCity/",
+            data: values,
+            success: function (data) {
+                alert("Şehir - Rota Başarılı Bir Şekilde Güncellendi");
             }
         });
     });
