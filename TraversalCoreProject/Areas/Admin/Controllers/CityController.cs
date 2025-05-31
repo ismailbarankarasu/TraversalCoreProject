@@ -43,16 +43,16 @@ namespace TraversalCoreProject.Areas.Admin.Controllers
             var jsonValues = JsonConvert.SerializeObject(values);
             return Json(jsonValues);
         }
-        public IActionResult DeleteCity(int DestinationID)
+        public IActionResult DeleteCity(int id)
         {
-            var value = _destinationService.TGetById(DestinationID);
+            var value = _destinationService.TGetById(id);
             _destinationService.TDelete(value);
             return NoContent();
         }
         public IActionResult UpdateCity(Destination destination)
         {
             var values = _destinationService.TGetById(destination.DesctinationId);
-            _destinationService.TUpdate(values);
+            _destinationService.TUpdate(destination);
             var value = JsonConvert.SerializeObject(destination);
             return Json(value);
         }
