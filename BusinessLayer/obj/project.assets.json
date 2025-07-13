@@ -2586,6 +2586,16 @@
           "bin/placeholder/DataAccessLayer.dll": {}
         }
       },
+      "DTOLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/DTOLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DTOLayer.dll": {}
+        }
+      },
       "EntityLayer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -7859,6 +7869,11 @@
       "path": "../DataAccessLayer/DataAccessLayer.csproj",
       "msbuildProject": "../DataAccessLayer/DataAccessLayer.csproj"
     },
+    "DTOLayer/1.0.0": {
+      "type": "project",
+      "path": "../DTOLayer/DTOLayer.csproj",
+      "msbuildProject": "../DTOLayer/DTOLayer.csproj"
+    },
     "EntityLayer/1.0.0": {
       "type": "project",
       "path": "../EntityLayer/EntityLayer.csproj",
@@ -7867,6 +7882,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "DTOLayer >= 1.0.0",
       "DataAccessLayer >= 1.0.0",
       "EPPlus >= 6.2.19",
       "EntityLayer >= 1.0.0",
@@ -7918,6 +7934,9 @@
           "projectReferences": {
             "C:\\cSharpDersleri\\TraversalCoreProject\\DataAccessLayer\\DataAccessLayer.csproj": {
               "projectPath": "C:\\cSharpDersleri\\TraversalCoreProject\\DataAccessLayer\\DataAccessLayer.csproj"
+            },
+            "C:\\cSharpDersleri\\TraversalCoreProject\\DTOLayer\\DTOLayer.csproj": {
+              "projectPath": "C:\\cSharpDersleri\\TraversalCoreProject\\DTOLayer\\DTOLayer.csproj"
             },
             "C:\\cSharpDersleri\\TraversalCoreProject\\EntityLayer\\EntityLayer.csproj": {
               "projectPath": "C:\\cSharpDersleri\\TraversalCoreProject\\EntityLayer\\EntityLayer.csproj"
