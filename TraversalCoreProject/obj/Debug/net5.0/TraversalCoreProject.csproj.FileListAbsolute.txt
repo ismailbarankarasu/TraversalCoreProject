@@ -277,3 +277,6 @@ C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\bin\Debug\net5.0\Mai
 C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\bin\Debug\net5.0\MimeKit.dll
 C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\obj\Debug\net5.0\Razor\Areas\Admin\Views\Mail\Index.cshtml.g.cs
 C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\obj\Debug\net5.0\Razor\Areas\Admin\Views\City\Index.cshtml.g.cs
+C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\bin\Debug\net5.0\DTOLayer.dll
+C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\bin\Debug\net5.0\DTOLayer.pdb
+C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\obj\Debug\net5.0\Razor\Areas\Admin\Views\ContactUs\Index.cshtml.g.cs

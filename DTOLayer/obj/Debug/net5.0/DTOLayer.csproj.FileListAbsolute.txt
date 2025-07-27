@@ -1,0 +1,12 @@
+C:\cSharpDersleri\TraversalCoreProject\DTOLayer\bin\Debug\net5.0\DTOLayer.deps.json
+C:\cSharpDersleri\TraversalCoreProject\DTOLayer\bin\Debug\net5.0\DTOLayer.dll
+C:\cSharpDersleri\TraversalCoreProject\DTOLayer\bin\Debug\net5.0\DTOLayer.pdb
+C:\cSharpDersleri\TraversalCoreProject\DTOLayer\obj\Debug\net5.0\DTOLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\cSharpDersleri\TraversalCoreProject\DTOLayer\obj\Debug\net5.0\DTOLayer.AssemblyInfoInputs.cache
+C:\cSharpDersleri\TraversalCoreProject\DTOLayer\obj\Debug\net5.0\DTOLayer.AssemblyInfo.cs
+C:\cSharpDersleri\TraversalCoreProject\DTOLayer\obj\Debug\net5.0\DTOLayer.csproj.CoreCompileInputs.cache
+C:\cSharpDersleri\TraversalCoreProject\DTOLayer\obj\Debug\net5.0\DTOLayer.sourcelink.json
+C:\cSharpDersleri\TraversalCoreProject\DTOLayer\obj\Debug\net5.0\DTOLayer.dll
+C:\cSharpDersleri\TraversalCoreProject\DTOLayer\obj\Debug\net5.0\refint\DTOLayer.dll
+C:\cSharpDersleri\TraversalCoreProject\DTOLayer\obj\Debug\net5.0\DTOLayer.pdb
+C:\cSharpDersleri\TraversalCoreProject\DTOLayer\obj\Debug\net5.0\ref\DTOLayer.dll
