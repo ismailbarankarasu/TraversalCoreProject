@@ -36,6 +36,9 @@ namespace BusinessLayer.Container
             services.AddScoped<IGuideDal, EfGuideDal>();
             services.AddScoped<IGuideService, GuideManager>();
 
+            services.AddScoped<IContactUsDal, EfContactUsDal>();
+            services.AddScoped<IContactUsService, ContactUsManager>();
+
             services.AddScoped<IAppUserDal, EfAppUserDal>();
             services.AddScoped<IAppUserService, AppUserManager>();
 
