@@ -6,10 +6,14 @@ using System.Threading.Tasks;
 using BusinessLayer.Abstract;
 using BusinessLayer.Concrete;
 using BusinessLayer.Container;
+using BusinessLayer.ValidationRules;
 using DataAccessLayer.Abstract;
 using DataAccessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
+using DTOLayer.DTOs.AnnouncementDTOs;
 using EntityLayer.Concrete;
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -43,6 +47,8 @@ namespace TraversalCoreProject
                 x.AddDebug();
             });
             services.ContainerDependencies();
+            services.AddAutoMapper(typeof(Startup));
+            services.AddTransient<IValidator<AnnouncementAddDto>, AnnouncementValidator>();
             services.AddDbContext<Context>();
             services.AddIdentity<AppUser, AppRole>()
                 .AddEntityFrameworkStores<Context>()
@@ -56,7 +62,7 @@ namespace TraversalCoreProject
                 cf.Filters.Add(new AuthorizeFilter(policy));
             });
             services.AddMvc();
-            services.AddControllersWithViews();
+            services.AddControllersWithViews().AddFluentValidation();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
