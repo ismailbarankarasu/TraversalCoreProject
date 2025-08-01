@@ -280,3 +280,6 @@ C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\obj\Debug\net5.0\Raz
 C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\bin\Debug\net5.0\DTOLayer.dll
 C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\bin\Debug\net5.0\DTOLayer.pdb
 C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\obj\Debug\net5.0\Razor\Areas\Admin\Views\ContactUs\Index.cshtml.g.cs
+C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\bin\Debug\net5.0\AutoMapper.dll
+C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\cSharpDersleri\TraversalCoreProject\TraversalCoreProject\obj\Debug\net5.0\Razor\Areas\Admin\Views\Announcement\Index.cshtml.g.cs
